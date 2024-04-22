@@ -1,4 +1,5 @@
 #!/bin/bash
+
 userid=$(id -u)
 timestamp=$(date +%F-%H+%M+%S)
 script_name=$($0 | cut -d "." -f1)
@@ -10,6 +11,7 @@ validate(){
         exit 0
     else
         echo "$2 : success"
+    fi
 }
 if [ $userid -ne 0 ]
 then
