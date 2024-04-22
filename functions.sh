@@ -2,7 +2,7 @@
 
 userid=$(id -u)
 timestamp=$(date +%F-%H+%M+%S)
-script_name=$($0 | cut -d "." -f1)
+script_name=$(echo $0 | cut -d "." -f1)
 logfile=/temp/$script_name-$timestamp.log
 validate(){
     if [ $1 -ne 0 ]
