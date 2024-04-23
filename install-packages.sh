@@ -10,7 +10,7 @@ validate(){
     if [ $1 -ne 0 ]
     then 
         echo -e "$2 : $R failed $N "
-        exit 0
+        exit 1
     else
         echo -e "$2 : $G sucees $N "
     fi
@@ -18,7 +18,7 @@ validate(){
 if [ $userid -ne 0 ]
 then
     echo "please use root access"
-    exit 0
+    exit 1
 else
     echo " u are super user"
 fi
@@ -30,7 +30,7 @@ do
     if [ $? -eq 0 ]
     then
         echo " already installed: $i"
-        exit 0
+        exit 1
     else    
         echo "installing package : $i"
         dnf install $i &>>$LOGFILE
