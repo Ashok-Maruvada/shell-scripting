@@ -3,7 +3,7 @@
 * Clone repo in local laptop
 * Start developing the code in IDE
 * Add the files to temp area with below command in local pc
-  > git add <file-name>  
+  > git add .  
 * Commit the changes into repo with below command
   > git commit -m "why-you-commited-some short reason"
 * Push the changes to GitHub/Central repo with below command
