@@ -4,13 +4,16 @@ userid=$(id -u)
 timestamp=$(date +%F-%H+%M+%S)
 script_name=$(echo $0 | cut -d "." -f1)
 logfile=/tmp/$script_name-$timestamp.log
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
 validate(){
     if [ $1 -ne 0 ]
     then 
-        echo "$2 :  failed"
+        echo "$2 : $R failed $N"
         exit 0
     else
-        echo "$2 : success"
+        echo "$2 : $R success $N"
     fi
 }
 if [ $userid -ne 0 ]
