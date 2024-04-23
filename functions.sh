@@ -11,10 +11,10 @@ N="\e[0m"
 validate(){
     if [ $1 -ne 0 ]
     then 
-        echo "$2 : $R failed $N"
+        echo -e "$2 : $R failed $N"
         exit 0
     else
-        echo "$2 : $G success $N"
+        echo -e "$2 : $G success $N"
     fi
 }
 if [ $userid -ne 0 ]
