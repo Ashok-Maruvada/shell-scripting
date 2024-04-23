@@ -30,7 +30,6 @@ do
     if [ $? -eq 0 ]
     then
         echo " already installed: $i"
-        exit 1
     else    
         echo "installing package : $i"
         dnf install $i &>>$LOGFILE
