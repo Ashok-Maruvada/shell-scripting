@@ -7,13 +7,14 @@ logfile=/tmp/$script_name-$timestamp.log
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
+
 validate(){
     if [ $1 -ne 0 ]
     then 
         echo "$2 : $R failed $N"
         exit 0
     else
-        echo "$2 : $R success $N"
+        echo "$2 : $G success $N"
     fi
 }
 if [ $userid -ne 0 ]
