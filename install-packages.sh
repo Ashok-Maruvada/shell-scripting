@@ -15,7 +15,7 @@ validate(){
         echo -e "$2 : $G sucees $N "
     fi
 }
-if [ userid -ne 0 ]
+if [ $userid -ne 0 ]
 then
     echo "please use root access"
     exit 0
