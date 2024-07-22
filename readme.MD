@@ -11,3 +11,7 @@
 
 * if changes made in the code again, u need to add, commi and push the code directly with a single command as below
   > git add . ; git commit -m "some-message"; git push -u origin main
+
+
+** Which proxy is better for my business? **
+It depends on the business requirements and needs. If you have a website with numerous visitors, reverse proxy seems a good option. Further, if you want to protect internal resources while accessing the public network, then a forward proxy is a way to go.
