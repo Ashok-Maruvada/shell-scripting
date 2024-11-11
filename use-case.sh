@@ -6,7 +6,7 @@ read input_string
 vowels="aeiouAEIOU"
 found_vowels=""
 
-for (( i=0; i<len(input_string); i++ ));
+for (( i=0; i<${#input_string}; i++ ));
 do
     char=$input_string:$i:0
     if [[ "$vowels" == *"$char"* ]]
